@@ -1,0 +1,8 @@
+# same as base, thinking capped at 1024 tokens a turn. at ~5 min a task, 4096-token thoughts
+# could eat the whole budget in a handful of turns
+temperature: 0.2
+top_p: 0.95
+max_output_tokens: 16384
+thinking_config:
+  thinking_budget: 1024
+  include_thoughts: true

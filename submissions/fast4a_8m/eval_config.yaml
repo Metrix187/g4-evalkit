@@ -1,0 +1,9 @@
+# fast4a with the public budget-fit agent's clocks (8 min, 28 calls, 240 s; it scored 0.18 on them and
+# says the run fit in 12 h). r001/r003 already said time is our bottleneck. 240 s matters for grading
+# too: the scorer runs the hidden test files with this same timeout (verification.py), so 120 could
+# fail a right patch on a slow suite
+evaluation:
+  timeout_seconds: 240
+  max_tool_calls: 28
+  max_time_minutes: 8
+  max_turns: 100

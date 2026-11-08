@@ -1,0 +1,16 @@
+name: swe_fast_lora2_45_agent
+model: gemma-4-31b-it-qat-w4a16-ct
+# lora v2: self-distilled from 222 resolved sessions, dev + mtrain part 1 (colab/train_lora_v2.ipynb), weights come from goth55/g4-adapters
+adapter: lora_v2_r16_qat
+instruction: !include prompts/system.md
+tools:
+  - run_command
+  - read_file
+  - edit_file
+  - write_file
+  - get_status
+  - submit_patch
+  - get_code_neighbors
+  - search_similar_code
+  - get_code_subgraph
+generate_content_config: !include configs/sampling.yaml

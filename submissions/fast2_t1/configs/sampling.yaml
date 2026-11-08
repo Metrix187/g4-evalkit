@@ -1,0 +1,9 @@
+# fast2 with gemma 4's recommended sampling (temperature 1.0, top_p 0.95, top_k 64; unsloth's gemma 4
+# docs). everything so far ran at the sample's 0.2. output stays capped at 8192 (see fast_cap)
+temperature: 1.0
+top_p: 0.95
+top_k: 64
+max_output_tokens: 8192
+thinking_config:
+  thinking_budget: 1024
+  include_thoughts: true

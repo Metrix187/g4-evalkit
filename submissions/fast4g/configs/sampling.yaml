@@ -1,0 +1,10 @@
+# fast4d_t4k: fast4d with the public budget-fit agent's thinking budget (4096) and clocks. r003 said 4096 = 1024
+# (34 vs 33 of 63), but that was before oct 8, when thoughts were still dropped between tool calls
+# fast2 keeps fast_cap's 8192 output cap: with 16384, a long thought plus a big tool result pushed a few
+# r001 sessions past vLLM's 32k window and they died with no patch
+temperature: 0.2
+top_p: 0.95
+max_output_tokens: 8192
+thinking_config:
+  thinking_budget: 4096
+  include_thoughts: true

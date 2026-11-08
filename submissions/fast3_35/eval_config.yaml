@@ -1,0 +1,9 @@
+# fast2 keeps fast_cap's 24 tool-call cap: the harness warns every call once 10 or fewer remain, which in r001
+# is about where agents should have been wrapping up instead of timing out (2/3 of sessions did)
+# 3.5 min/task, not 5: both 5-min fast3 subs died with kaggle's system error at exactly 15 h on oct 7-8.
+# 116 x 3.5 min caps agent time at ~6.8 h, so setup + verify get ~5 h even if the scorer got slower
+evaluation:
+  timeout_seconds: 120
+  max_tool_calls: 24
+  max_time_minutes: 3.5
+  max_turns: 100

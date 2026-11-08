@@ -1,0 +1,7 @@
+# 12 h for ~118 sequential tasks incl. sandbox setup is ~6 min each. 5 min of agent time keeps
+# a full hidden run around 11 h, under the limit that errors the whole submission
+evaluation:
+  timeout_seconds: 120
+  max_tool_calls: 60
+  max_time_minutes: 5
+  max_turns: 100
