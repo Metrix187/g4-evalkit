@@ -36,3 +36,7 @@ competition data.
 
 Apache-2.0 (the competition requires an OSI license). Mined tasks carry their source repositories'
 licenses, listed per task in the dataset.
+
+## Paper
+
+`paper/paper.pdf` is the writeup as submitted to the paper track (built from `notes/paper_draft.md` with `tools/paper_build.py`).
